@@ -47,13 +47,15 @@ Nine isolates were confirmed species ID for DNA extraction on Thursday; six *E. 
 
 E - Emmanuel, M - Maulid, A - Anna, C - Camilla 
 
-- A2 - E
-- A4 - M
-- B3 - A
-- C1 - E
-- C2 - C
-- C4 - M
-- D1 - C
-- D2 - C
-- D4 - A
+- - A2 - E
+- - A4 - M
+- - B3 - A
+- - C1 - E
+- - C2 - C
+- - C4 - M
+- - D1 - C
+- - D2 - C
+- - D4 - A
+
+Sub-culturing of strains for DNA extraction was performed on Tuesday 19.11.2024
 
