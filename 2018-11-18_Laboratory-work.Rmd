@@ -1,0 +1,59 @@
+---
+title: "2024-11-18_laboratory-work"
+author: "01schau"
+date: "`r Sys.Date()"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Course part 1 - Laboratory (Monday)
+
+-   We selected and sub-cultured 20 isolates from the -80 freezer
+    -   8 presumptive *Salmonella* spp. isolates
+    -   6 presumptive *E. coli* isolates
+    -   6 presumptive *Klebsiella* spp. isolates
+
+# Course part 2 - Laboratory (Wednesday)
+
+- The Vitek machine was run on Tuesday (three times due to problems with the control)
+- For most isolates the results were fine on the last run
+  - No ID; no bacteria or not able to identify
+  - We have not correlated the number and species ID from the VITEK to what was entered on the plates (would be nice to have the presumptive species to compare)
+  
+## Picture of species identification results
+<!--
+![](files/VITEK_RESULTS19_11_2024.pdf)
+-->
+
+<!-- this is to view a file or an image in the document when it is knitted
+![integrated pdf](files/VITEK_RESULTS19_11_2024.pdf)
+-->
+
+! means I want to view
+
+# opens the file, makes a link, so you can view the file
+
+<!-- have made a link to the file?? -->
+[linked pdf](files/VITEK_RESULTS19_11_2024.pdf)
+
+# better to save as an image (png) rather than a pdf
+![results1](files/VITECK RESULTS19_11_2024_Page_1.png)
+
+![results2](files/VITECK RESULTS19_11_2024_Page_2.png)
+Nine isolates were confirmed species ID for DNA extraction on Thursday; six *E. coli* and three *Salmonella enterica*:
+
+E - Emmanuel, M - Maulid, A - Anna, C - Camilla 
+
+- A2 - E
+- A4 - M
+- B3 - A
+- C1 - E
+- C2 - C
+- C4 - M
+- D1 - C
+- D2 - C
+- D4 - A
+

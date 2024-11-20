@@ -25,9 +25,9 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("here")
 install.packages("DiagrammeR")
 ```
+
 # ctrl + alt + I 
 Gives the start and stop of a code/ a cell (cheat command, short code)
-
 
 ```{r}
 angry_or_not <- "not"
@@ -37,6 +37,7 @@ To give the content to an object
 ```{r}
 angry_or_not
 ```
+
 Madelaine, are you angry or not? `r print(angry_or_not)`
 
 ```{r}
@@ -60,24 +61,85 @@ human_data <-
   readr::read_csv2(path_data)
 ```
 
+# Wednesday - day 3
 
+## Packages into memory
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+library(here)
+library(tidyverse)
 ```
 
-## Including Plots
+## Getting help with packages and what does a function do
 
-You can also embed plots, for example:
+F1
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+?library()
+help("library")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## we get our data
+
+```{r}
+path_data <- here::here("data/2024-09-25_INIKA_SAMPLING_ANALYSIS_HUMAN.csv")
+
+path_data
+```
+
+```{r}
+human_data <-
+  readr::read_csv2(path_data)
+```
+
+## Exploration of a data fram
+
+- Names of the columns
+```{r}
+colnames(human_data)
+```
+
+- getting the column names into a vector for pasting and manipulations
+- i can use a function within a function
+```{r}
+dput(
+  colnames(human_data)
+  )
+```
+
+- explanation: c() is to make vectors
+```{r}
+test <- c("one", "2", 3)
+test
+typeof(test)
+class(test)
+```
+- figure out if the character is numeric or text or something else
+- what type of objects do we have?
+
+# sign for an assignment: <-
+
+```{r}
+test <- c("one", "2", 3)
+test
+test[3]
+typeof(test[3])
+
+class(test)
+```
+All the elements of a vector are of the same `type`(text, double = real, integer, date ....)
+
+```{r}
+test2 <- c(1,2,3)
+typeof(test2)
+class(test2)
+test2*test2
+```
+
+```{r}
+test2 * c(1,2)
+
+```
+
+
+
